@@ -60,7 +60,7 @@ exports.notice = (comment) => {
 
   if (!process.env.DISABLE_EMAIL) {
     const emailSubject =
-      "「" + process.env.SITE_NAME + "」上有人回复了你啦!";
+      "📌 哇！「" + process.env.SITE_NAME + "」上有人回复了你啦！快点我！💦";
     const emailContent = noticeTemplate({
       siteName: process.env.SITE_NAME,
       siteUrl: process.env.SITE_URL,
@@ -160,7 +160,6 @@ ${$(
   .text()
   .replace(/\n+/g, "\n")
   .replace(/\n+$/g, "")}
-
 链接：${url + "#" + comment.get("objectId")}`;
     axios
       .get(

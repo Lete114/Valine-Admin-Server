@@ -24,7 +24,7 @@ router.get("/", function (req, res, next) {
             zone: String(process.env.LEANCLOUD_REGION),
             favicon: process.env.FAVICON
               ? process.env.FAVICON
-              : "https://cdn.jsdelivr.net/gh/lete114/CDN/Lete_Blog/images/favicon.ico",
+              : "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.2.3/butterfly/img/favicon.ico",
           });
         },
         function (err) {
@@ -34,7 +34,7 @@ router.get("/", function (req, res, next) {
               comment_list: [],
               favicon: process.env.FAVICON
                 ? process.env.FAVICON
-                : "https://cdn.jsdelivr.net/gh/lete114/CDN/Lete_Blog/images/favicon.ico",
+                : "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.2.3/butterfly/img/favicon.ico",
             });
           } else {
             next(err);
@@ -47,7 +47,7 @@ router.get("/", function (req, res, next) {
     res.redirect("/", {
       favicon: process.env.FAVICON
         ? process.env.FAVICON
-        : "https://cdn.jsdelivr.net/gh/lete114/CDN/Lete_Blog/images/favicon.ico",
+        : "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.2.3/butterfly/img/favicon.ico",
     });
   }
 });
@@ -95,7 +95,7 @@ router.get("/delete", function (req, res, next) {
     res.redirect("/", {
       favicon: process.env.FAVICON
         ? process.env.FAVICON
-        : "https://cdn.jsdelivr.net/gh/lete114/CDN/Lete_Blog/images/favicon.ico",
+        : "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.2.3/butterfly/img/favicon.ico",
     });
   }
 });
