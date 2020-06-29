@@ -147,9 +147,9 @@ exports.notice = (comment) => {
     if (process.env.QQ != null) {
       qq = "&qq=" + process.env.QQ;
     }
-    const scContent = ` ${
+    const scContent = `「 ${
       process.env.SITE_NAME
-    } 上有新评论了！
+    } 」上有新消息啦！！
 评论人： ${name} 
 发表内容：
 ${$(
