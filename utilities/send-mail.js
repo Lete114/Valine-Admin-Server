@@ -150,8 +150,8 @@ exports.notice = (comment) => {
     const scContent = ` ${
       process.env.SITE_NAME
     } 上有新评论了！
-评论人： ${name} 发表评论：
-[CQ:face,id=77][CQ:face,id=77][CQ:face,id=77][CQ:face,id=77][CQ:face,id=77]
+评论人： ${name} 
+发表内容：
 ${$(
   text
     .replace(/  <img.*?src="(.*?)".*?>/g, "\n[图片]$1\n")
@@ -160,8 +160,7 @@ ${$(
   .text()
   .replace(/\n+/g, "\n")
   .replace(/\n+$/g, "")}
-[CQ:face,id=76][CQ:face,id=76][CQ:face,id=76][CQ:face,id=76][CQ:face,id=76]
-[CQ:face,id=169]${url + "#" + comment.get("objectId")}`;
+链接：${url + "#" + comment.get("objectId")}`;
     axios
       .get(
         `https://qmsg.zendee.cn:443/send/${
